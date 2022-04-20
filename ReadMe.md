@@ -28,9 +28,9 @@ This application requires inquirer, which you can install by typing > 'npm i inq
 ## Usage
 Open index.js in the terminal and type node index.js to initialize the program. Once you have completed the prompts, your ReadMe file will be generated in the same folder as index.js
 
-[Demonstration Video](./Assets/ReadMe%20Generator%20Demo%20by%20Ryan%20Thomas.mp4)
+[Demonstration Video](./Develop/Assets/ReadMe%20Generator%20Demo%20by%20Ryan%20Thomas.mp4)
 
-[Sample ReadMe](./Assets/SampleReadMe.md)
+[Sample ReadMe](./Develop/Assets/SampleReadMe.md)
 
 ## Contributions
 Fork a new branch on github, make whatever changes you would like to see, and then create a pull request for your branch. I will take a look!
