@@ -1,6 +1,6 @@
-# Title
+# ReadMe Generator
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
 <ol>
@@ -15,7 +15,7 @@
 </ol>
 
 ## Description
-A great project
+This was my first attempt at creating a node application. It uses the terminal to automatically generate a professional ReadMe for a github project. It creates a table of contents with links to each section, and it populates each section with data the user entered into the terminal. It also creates a license badge, and provides a link to the chosen license. Right now, it supports the 3 most popular github licenses, chosen from a list.
 
     
 ## License
@@ -23,18 +23,22 @@ A great project
 
   [MIT License Information](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)
 ## Installation
-Be careful
+This application requires inquirer, which you can install by typing > 'npm i inquirer' into the console, without the apostrophes.
 
 ## Usage
-Use it well
+Open index.js in the terminal and type node index.js to initialize the program. Once you have completed the prompts, your ReadMe file will be generated in the same folder as index.js
+
+[Demonstration Video](./Assets/ReadMe%20Generator%20Demo%20by%20Ryan%20Thomas.mp4)
+
+[Sample ReadMe](./Assets/SampleReadMe.md)
 
 ## Contributions
-Make a pull request after branching and forking etc.
+Fork a new branch on github, make whatever changes you would like to see, and then create a pull request for your branch. I will take a look!
 
 ## Testing
-Very carefully
+I haven't yet learned how to test programs, so I'll let you know when I get there. You could try to enter a bunch of weird junk data to see if it breaks, but I don't know how helpful that would be.
 
 ## Questions
-Author: [Ryan](https://github.com/Ryan)
+Author: [Stiltskinner](https://github.com/Stiltskinner)
 
-You can reach me with any questions at my email: [email@me.com](mailto:email@me.com)
+You can reach me with any questions at my email: [ryan.thomas@utexas.edu](mailto:ryan.thomas@utexas.edu)
