@@ -41,23 +41,32 @@ function renderLicenseSection(license) {
   if (license === "MIT") {
     return `
     
-## License - MIT
-A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.`
+## License
+**MIT** - A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.`
   }
   if (license === "GPLv2") {
     return `
     
-## License - GPLv2
-The GNU GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license. There are multiple variants of the GNU GPL, each with different requirements.`
+## License
+**GPLv2** - The GNU GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license. There are multiple variants of the GNU GPL, each with different requirements.`
   }
   if (license === "Apache") {
     return `
     
-## License - Apache
-A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.`
+## License
+**Apache** - A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.`
   }
   else {
     return ``
+  }
+}
+
+function renderLicenseTable(license) {
+  if (license === ``) {
+    return;
+  }
+  else {
+    return `\n<li><a href="#license">License</a></li>`;
   }
 }
 
@@ -66,15 +75,20 @@ function generateMarkdown(data) {
   let licenseBadge = renderLicenseBadge(data.license);
   let licenseSection = renderLicenseSection(data.license);
   let licenseLink = renderLicenseLink(data.license);
+  let licenseTable = renderLicenseTable(data.license);
   return `# ${data.title}
 
 ${licenseBadge}
 
 ## Table of Contents
 <ol>
-  <li><a href="#description">Description</a></li>
-  <li><a href="#Installation">Installation</a></li>
-  <li><a href="#description">Description</a></li>
+  <li><a href="#description">Description</a></li> ${licenseTable}
+  <li><a href="#installation">Installation</a></li>
+  <li><a href="#usage">Usage</a></li>
+  <li><a href="#contributions">Contributions</a></li>
+  <li><a href="#testing">Testing</a></li>
+  <li><a href="#questions">Questions</a></li>
+
 </ol>
 
 ## Description
@@ -83,17 +97,18 @@ ${licenseSection} ${licenseLink}
 ## Installation
 ${data.install}
 
-## Usage Information
+## Usage
 ${data.howtouse}
 
-## Contribution Guidelines
+## Contributions
 ${data.contribute}
 
-## Test Instructions
+## Testing
 ${data.test}
 
 ## Questions
-[Author: ${data.username}](https://github.com/${data.username})
+Author: [${data.username}](https://github.com/${data.username})
+
 You can reach me with any questions at my email: [${data.email}](mailto:${data.email})
 `;}
 
