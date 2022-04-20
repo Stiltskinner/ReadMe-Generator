@@ -1,8 +1,8 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// A function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === "MIT") {
-    return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
   }
   if (license === "GPLv2") {
     return `[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)`
@@ -15,7 +15,7 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
+// A function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license === "MIT") {
@@ -35,7 +35,7 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
+// A function that returns the license section of README with a brief description of the license from its web page. It also has the name of the license bolded
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license === "MIT") {
@@ -61,6 +61,7 @@ function renderLicenseSection(license) {
   }
 }
 
+// A function to add License to the table of contents if one exists, if no license exists, it returns an empty string
 function renderLicenseTable(license) {
   if (license === ``) {
     return;
@@ -70,8 +71,9 @@ function renderLicenseTable(license) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// A function to generate markdown for README based on user input
 function generateMarkdown(data) {
+  // variables store data from the renderlicense functions
   let licenseBadge = renderLicenseBadge(data.license);
   let licenseSection = renderLicenseSection(data.license);
   let licenseLink = renderLicenseLink(data.license);

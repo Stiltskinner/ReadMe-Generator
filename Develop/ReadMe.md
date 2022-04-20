@@ -1,6 +1,6 @@
-# asdgsadg
+# Title
 
-[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Table of Contents
 <ol>
@@ -15,26 +15,26 @@
 </ol>
 
 ## Description
-asdggasd
+A great project
 
     
 ## License
-**GPLv2** - The GNU GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license. There are multiple variants of the GNU GPL, each with different requirements. 
+**MIT** - A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code. 
 
-  [GPLv2 License Information](https://github.com/systemd/systemd/blob/main/LICENSE.GPL2)
+  [MIT License Information](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)
 ## Installation
-asdgdsag
+Be careful
 
 ## Usage
-asdgasdg
+Use it well
 
 ## Contributions
-asdgadsg
+Make a pull request after branching and forking etc.
 
 ## Testing
-asdgadsg
+Very carefully
 
 ## Questions
-Author: [gdasgds](https://github.com/gdasgds)
+Author: [Ryan](https://github.com/Ryan)
 
-You can reach me with any questions at my email: [asdgasdg](mailto:asdgasdg)
+You can reach me with any questions at my email: [email@me.com](mailto:email@me.com)
