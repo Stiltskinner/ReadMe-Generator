@@ -70,10 +70,7 @@ function writeToFile(fileName, data) {
   // How do I use the markdown file here??
   // import markdown functions
 }
-
-// TODO: Create a function to initialize app
 function init() {
-  // Write inquirer prompt
   inquirer
     .prompt(questions)
     .then((answers) => {
@@ -82,8 +79,6 @@ function init() {
     }
 
     );
-  // call writetofile inside .then()
-  // pass answers to writetofile here
 }
 
 // Function call to initialize app
