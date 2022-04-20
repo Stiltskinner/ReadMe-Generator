@@ -63,7 +63,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    let parsedData = JSON.stringify(generator.generateMarkdown(data))
+    let parsedData = `${(generator.generateMarkdown(data))}`
   // use fs.writefile here
   fs.writeFile(fileName, parsedData, (err) =>
   err ? console.error(err) : console.log('Success!'));
