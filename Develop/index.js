@@ -7,8 +7,9 @@
 // 4. Pass MD to writetofile
 
 // TODO: Include packages needed for this application
-const generateMD = require("./utils/generateMarkdown.js");
+const generator = require("./utils/generateMarkdown");
 const inquirer = require("inquirer");
+const fs = require('fs');
 
 // Questions for user input
 const questions = [
@@ -60,16 +61,12 @@ const questions = [
   },
 ];
 
-inquirer
-    .prompt(questions)
-    .then((answers) =>
-    console.log("user responses", answers)
-    );
-
-
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+    let parsedData = JSON.stringify(generator.generateMarkdown(data))
   // use fs.writefile here
+  fs.writeFile(fileName, parsedData, (err) =>
+  err ? console.error(err) : console.log('Success!'));
   // How do I use the markdown file here??
   // import markdown functions
 }
@@ -77,6 +74,14 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
   // Write inquirer prompt
+  inquirer
+    .prompt(questions)
+    .then((answers) => {
+        console.log("user responses", answers)
+        writeToFile('ReadMe.md', answers);
+    }
+
+    );
   // call writetofile inside .then()
   // pass answers to writetofile here
 }
