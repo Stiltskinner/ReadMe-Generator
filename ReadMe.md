@@ -30,6 +30,8 @@ Open index.js in the terminal and type node index.js to initialize the program. 
 
 [Demonstration Video](./Develop/Assets/ReadMe%20Generator%20Demo%20by%20Ryan%20Thomas.mp4)
 
+[Streaming Demonstration Video](https://drive.google.com/file/d/15QYxbNLiZYmvqQ6DX6ZaDlyS3i8u1oYd/view)
+
 [Sample ReadMe](./Develop/Assets/SampleReadMe.md)
 
 ## Contributions
